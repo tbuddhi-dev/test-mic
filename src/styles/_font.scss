@@ -1,0 +1,58 @@
+/* Define fonts variation */
+@font-face {
+  font-family: "AvenirLight";
+  /* Define the src for each font format */
+  src: url("../assets/fonts/AvenirLight.woff2") format("woff2"),
+    url("../assets/fonts/AvenirLight.woff") format("woff"),
+    url("../assets/fonts/AvenirLight.ttf") format("truetype");
+  /* Optionally specify font-weight and font-style */
+  font-weight: 300;
+}
+@font-face {
+  font-family: "AvenirRegular";
+  /* Define the src for each font format */
+  src: url("../assets/fonts/AvenirRegular.woff2") format("woff2"),
+    url("../assets/fonts/AvenirRegular.woff") format("woff"),
+    url("../assets/fonts/AvenirRegular.ttf") format("truetype");
+  /* Optionally specify font-weight and font-style */
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AvenirBook";
+  /* Define the src for each font format */
+  src: url("../assets/fonts/AvenirBook.woff2") format("woff2"),
+    url("../assets/fonts/AvenirBook.woff") format("woff"),
+    url("../assets/fonts/AvenirBook.ttf") format("truetype");
+  /* Optionally specify font-weight and font-style */
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AvenirBlack";
+  /* Define the src for each font format */
+  src: url("../assets/fonts/AvenirBlack.woff2") format("woff2"),
+    url("../assets/fonts/AvenirBlack.woff") format("woff"),
+    url("../assets/fonts/AvenirBlack.ttf") format("truetype");
+  /* Optionally specify font-weight and font-style */
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AvenirBlack2";
+  /* Define the src for each font format */
+  src: url("../assets/fonts/AvenirBlack.woff2") format("woff2"),
+    url("../assets/fonts/AvenirBlack.woff") format("woff"),
+    url("../assets/fonts/AvenirBlack.ttf") format("truetype");
+  /* Optionally specify font-weight and font-style */
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "AvenirHeavy";
+  /* Define the src for each font format */
+  src: url("../assets/fonts/AvenirHeavy.woff2") format("woff2"),
+    url("../assets/fonts/AvenirHeavy.woff") format("woff"),
+    url("../assets/fonts/AvenirHeavy.ttf") format("truetype");
+  /* Optionally specify font-weight and font-style */
+  font-weight: 900;
+}

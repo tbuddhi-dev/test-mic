@@ -1,0 +1,44 @@
+// .left-navbar {
+//     background-color: #343a40;  // Customize background color
+//     padding: 15px;
+//     height: 100vh;
+//     color: #fff;
+  
+//     .nav-link {
+//       color: #fff;  // Customize text color
+//     }
+//   }
+
+
+.left-navbar {
+  background-color: #607c96; // Customize background color
+  padding: 15px;
+  width: 200px;
+  height: 100vh;
+  transition: width 0.3s ease;
+
+  .nav-item a {
+    color: #fff; // Customize text color
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    width: 60px;
+
+    .navbar-toggler {
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
+
+    &.collapsed {
+      width: 60px;
+    }
+  }
+}

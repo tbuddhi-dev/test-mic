@@ -1,0 +1,155 @@
+$txt-para-size: 14px;
+$txt-para-clr: #757575;
+
+.mydoc-wrapper {
+  header {
+    margin-bottom: 0.5rem;
+  }
+  section {
+    padding: 2rem;
+
+    &.company-info {
+      display: flex;
+    }
+    section{
+        padding: 1.5rem 2rem;
+  }
+
+  .req-description-wrapper {
+    .req-description {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 10;
+    }
+  }
+
+  .facilities-wrapper {
+    padding-left: 1.5rem;
+    flex: 1;
+
+    .fc-row {
+      color: $txt-para-clr;
+      font-size: 14px;
+      font-weight: 400;
+      border-bottom: 1px solid $app-border;
+      line-height: 1.8;
+      margin: 0;
+      padding-top: 0.25rem;
+
+      .img-arrow img {
+        max-width: 23px;
+      }
+    }
+  }
+
+  .key-financial-wrapper {
+    flex: 2;
+
+    .value-row {
+      display: flex;
+      justify-content: space-between;
+      color: $txt-para-clr;
+      font-size: $txt-para-size;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .security-wrapper {
+    flex: 3;
+    padding-left: 1.5rem;
+  }
+
+  .company-info-wrapper {
+    width: 50%;
+
+    ul {
+      // list-style: disc;
+      // margin-left: 14px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 10;
+
+      li {
+        color: $txt-para-clr;
+        font-size: $txt-para-size;
+        font-weight: 400;
+        text-align: justify;
+        list-style: inside;
+      }
+    }
+  }
+
+  .sentiment-score {
+    flex: 1;
+    padding-left: 1.5rem;
+
+    .wrap-box {
+      display: flex;
+      justify-content: space-between;
+      background-color: $bg-app-body;
+      // padding: 1rem 0 1rem 1rem;
+      border-radius: 5px;
+      box-shadow: 11.394px 11.394px 40px 0px rgba(0, 0, 0, 0.03) inset,
+        -11.394px -11.394px 40px 0px rgba(0, 0, 0, 0.03) inset;
+
+      .progress-bars {
+        flex: auto;
+        padding: 1.2rem;
+        padding-right: 2rem;
+
+        .progress-row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .progress {
+            flex: auto;
+          }
+        }
+
+        .progress-value {
+          width: 20px;
+          line-height: 1;
+          // margin-bottom: 0.5rem;
+          margin-left: 0.5rem;
+          text-align: right;
+        }
+      }
+
+      .label-box {
+        border-radius: 0px 5px 5px 0px;
+        background: $bg-header;
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  p {
+    color: $txt-para-clr;
+    font-size: $txt-para-size;
+    font-weight: 400;
+    text-align: justify;
+  }
+}
+}
+
+.progress {
+  --bs-progress-bg: #cfcdcd;
+  --bs-progress-border-radius: 0;
+  --bs-progress-height: 10px;
+}
+.progress-bar {
+  --bs-progress-bar-bg: #284b80;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: $bg-app-body;
+  font-size: 20px;
+}

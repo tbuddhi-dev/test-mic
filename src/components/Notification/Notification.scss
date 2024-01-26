@@ -1,0 +1,104 @@
+.notification-page {
+
+    .message-content,
+    .message-time,
+    .message-date,
+    .message-area,
+    .message-updated,
+    .button-edit,
+    .extend-title,
+    .extend-title-points {
+        font-family: "AvenirRegular", sans-serif !important;
+        color: $txt-title-1;
+
+    }
+
+    .message-strip {
+        background-color: #E9EAEF;
+        border: 0.5px solid #E9EAEF;
+        box-shadow: 0px 4px 9px 0px #00000026;
+        width: Fixed (793px);
+        height: Hug(80px);
+        padding: 10px;
+        border-radius: 13px;
+        border: 0.5px;
+        gap: 10px;
+
+    }
+
+    .message-content,
+    .extend-title {
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    .message-updated,
+    .extend-title-points {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .message-time,
+    .message-date,
+    .message-area {
+        font-size: 12px;
+        font-weight: 400;
+        border: 1px solid #E9EAEF;
+        border-radius: 7px;
+
+        background: #E9EAEF;
+
+    }
+
+    .custom-row-margin {
+        margin-bottom: -0.5rem;
+    }
+
+    .button-edit {
+        width: 87px;
+        border-color: #757575;
+        background-color: #E9EAEF;
+        margin-right: 0.5rem;
+    }
+
+    .custom-row-expand-margin {
+        border: 1px solid #E9EAEF;
+        border-radius: 7px;
+        background-color: #E9EAEF;
+        margin-right: 0.5rem;
+        box-shadow: 11.393553733825684px 11.393553733825684px 40px 0px #00000008 inset;
+        box-shadow: -11.393553733825684px -11.393553733825684px 40px 0px #00000008 inset;
+        width: Fixed (773px);
+        height: Hug (172px);
+        padding: 5px;
+        border-radius: 7px;
+        gap: 9px;
+    }
+
+    .extend-title {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        height: 27px;
+    }
+
+    .extend-title-points {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: justified;
+        // margin-left: 0.5rem;
+        //styleName: Paragraph Text;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: justified;
+
+    }
+
+
+}

@@ -1,0 +1,42 @@
+/* In your main stylesheet or dedicated styles file */
+
+.pdfViewer-wrapper {
+    /* Add any styles for the PDF viewer wrapper */
+  }
+  
+  .pdf-search-container {
+    margin: 10px 0; /* Adjust as needed */
+  }
+  
+  .pdf-search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 4px;
+    font-size: 14px;
+  }
+  
+  .pdf-search-button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .pdf-search-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  /* Additional styles for highlighting */
+  .pdf-highlight {
+    outline: 2px dashed blue;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .rpv-core__annotation-popup-wrapper{
+    display: none !important;
+  }
