@@ -1,0 +1,25 @@
+@import './styles/global';
+@import "../node_modules/bootstrap/dist/css/bootstrap";
+
+// Components styles
+@import './components/FileUploadScreen/FileUploadScreen.scss';
+@import './components/HomeScreen/HomeScreen.scss';
+@import './components/MyDocument/MyDocument.scss';
+@import './components/Notification/Notification.scss';
+// @import './components/SwiperCarousel/SwiperCarousel.scss';
+@import "./components//MarketSentiment//MarketSentiment.scss";
+@import './pages/KeyFinancialPage/KeyFinancialPage.scss';
+@import './components/PdfViewer/PdfViewer.scss';
+
+// Layout styles
+@import "./layout/Header/Header.scss";
+@import "./layout/BottomNavBar/BottomNavWrapper.scss";
+@import "./layout/NavBar/NavBar.scss";
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto; // Temp
+  height: 100vh;
+  background-color: $bg-app-body;
+}

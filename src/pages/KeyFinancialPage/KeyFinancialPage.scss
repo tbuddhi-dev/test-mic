@@ -1,0 +1,55 @@
+.key-financial-page{
+    .chart-section{
+        padding: 1.5rem 2rem 0;
+        // height: 35vh;
+    }
+
+    .visuals-wrapper{
+        display: flex;
+        .chart-separator{
+            border-right: 1px dashed #284B80;
+            padding: 5px;
+            padding-right: 20px;
+            // min-height: 380px;
+            height: 360px;
+            margin-right: 20px;
+        }
+
+        .revenue-chart-wrapper{
+            flex-grow: 1;
+            border-right: 1px dashed $app-border;
+            width: 25%;
+        }
+        .ebitda-chart-wrapper{
+            flex-grow: 1;
+            width: 25%;
+        }
+        .charts-wrapper{
+            flex-grow: 2;
+            flex-direction: column;
+            width: 50%;
+        }
+    }
+    .spinner-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 400px;
+        .jk-theme{
+            color: #284B80;
+        }
+    }
+}
+
+.pdfViewer-wrapper{
+    height: calc(100vh - 35vh - 60px - 85px);
+    padding: 2rem 2rem;
+    border: 0.5px solid #284B80;
+    width: 94%;
+    margin: auto;
+    margin-top: 0.75rem;
+    .rpv-core__inner-page{
+        background-color: transparent !important;
+    }
+}
