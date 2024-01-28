@@ -1,11 +1,11 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import SentimentResult from "./SentimentResult";
 import SentimentButton from "./SentimentButton";
 import NewsCards from "./NewsCards";
 import Sunburst from "./Sunburst";
-import SentimentContext from "./SentimentContext";
+// import SentimentContext from "./SentimentContext";
 import { useParams } from "react-router-dom";
-import testSelectedCompanyNews from "./testdata";
+// import testSelectedCompanyNews from "./testdata";
 import { useData } from "../../App";
 import chartData from "./data";
 
@@ -50,11 +50,19 @@ function MarketSentiment() {
     }
   };
 
+ 
   const handleSort = (sentiment) => {
     console.log(sentiment);
-    // if (sentiment =="positive") {
-    //   newsList.map((news) => news.score)
-    // }
+    let sortedNewsList;
+
+    if (sentiment === "Most Positive") {
+      sortedNewsList = [...newsList].sort((a, b) => b.score - a.score);
+    } else if (sentiment === "Most Negative") {
+      sortedNewsList = [...newsList].sort((a, b) => a.score - b.score);
+    }
+
+    // Update the newsList state
+    setNewsList(sortedNewsList);
   };
 
   useEffect(() => {

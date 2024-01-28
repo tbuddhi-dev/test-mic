@@ -1,32 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import vectorBtn from "../../assets/icons/vector.svg";
 
-function SentimentButton({ handleSort }) {
-  const sentiments = ["Most Positive", "Most Negative", "Recent News"];
-  const [selectedSetiment, setSelectedSentiment] = useState("");
-  const [dropdownSentiment, setDropdownSentiment] = useState(sentiments);
+const SentimentDropdown = ({ handleSort }) => {
+  // const sentiments = ["Most Positive", "Most Negative", "Recent News"];
+  const sentiments = ["Most Positive", "Most Negative"];
+  const [selectedSentiment, setSelectedSentiment] = useState("");
 
   const handleItemClick = (sentiment) => {
     setSelectedSentiment(sentiment);
-    setDropdownSentiment((prevSentiments) => {
-      const updatedSentiments = [...prevSentiments];
-      const selectedIndex = updatedSentiments.findIndex(
-        (item) => item === sentiment
-      );
-      if (selectedIndex !== -1) {
-        updatedSentiments.splice(selectedIndex, 1);
-      }
-      if (selectedSetiment !== "Most Negative") {
-        updatedSentiments.push(selectedSetiment);
-      }
-      return updatedSentiments;
-    });
     handleSort(sentiment);
   };
+
   return (
-    <div className="btn-group sentiment-btn">
-      <button type="button" className="btn btn-light" placeholder="Sentiment">
-        {selectedSetiment || "Sentiment"}
+    <div className=" sentiment-btn">
+      <button type="button" className="btn" placeholder="Sentiment">
+        {selectedSentiment || "Sentiment"}
       </button>
       <img
         src={vectorBtn}
@@ -34,15 +22,16 @@ function SentimentButton({ handleSort }) {
         className="btn btn-light dropdown-toggle dropdown-toggle-split vector-icon"
         id="dropdownMenuReference"
         data-bs-toggle="dropdown"
-        aria-expanded="false"
+        // aria-expanded="false"
         data-bs-reference="parent"
+        alt="dropdown"
       />
-      <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton1">
-        {dropdownSentiment.map((sentiment, index) => (
+      <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        {sentiments.map((sentiment, index) => (
           <li key={index}>
             <a
               className="dropdown-item"
-              href="#"
+              href=":javascript"
               onClick={() => handleItemClick(sentiment)}
             >
               {sentiment}
@@ -52,6 +41,6 @@ function SentimentButton({ handleSort }) {
       </ul>
     </div>
   );
-}
+};
 
-export default SentimentButton;
+export default SentimentDropdown;

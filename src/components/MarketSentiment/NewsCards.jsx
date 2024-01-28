@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import NewsCard from "./NewsCard";
 
 function NewsCards({ newsList }) {
@@ -19,7 +19,7 @@ function NewsCards({ newsList }) {
               <img
                 className="card-img top-img"
                 src={image_url}
-                alt="news image"
+                alt="news"
               />
 
               <div className="card-img-overlay wide-news-card">
@@ -41,8 +41,8 @@ function NewsCards({ newsList }) {
           </div>
         </div>
       ) : (
-        <div className="sentiment-score mt-2">
-          <p>Recent News Not Found</p>
+        <div className="">
+          <div className="not-found-news">Recent News Not Found</div>
         </div>
       )}
     </>
