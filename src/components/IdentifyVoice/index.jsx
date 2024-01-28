@@ -13,8 +13,7 @@ const IdentifyVoice = () => {
   
       const initializeSpeechSDK = async () => {
         const subscriptionKey = '63d7de94c5bd42dea7543029f10d2b6e';
-        const serviceRegion = 'eastus'; // e.g., 'westus'
-        const locale = 'en-US';
+        const serviceRegion = 'eastus'; 
   
         speechConfig = sdk.SpeechConfig.fromSubscription(subscriptionKey, serviceRegion);
         audioConfig = sdk.AudioConfig.fromDefaultMicrophoneInput();
@@ -71,7 +70,7 @@ const IdentifyVoice = () => {
         let word = `let's look into ${company}`;
         // Use fuzzball to check fuzzy match
         if (fuzzball.partial_ratio(companySearch, word) >= threshold) {
-          let function_output = console.log(`Opening ${company} page`);
+            console.log(`Opening ${company} page`);
             break;  // Stop searching if a match is found
         }
     }
@@ -84,7 +83,7 @@ const IdentifyVoice = () => {
         let word = `drill deep into ${feature}`;
         // Use fuzzball to check fuzzy match
         if (fuzzball.partial_ratio(featureSearch, word) >= threshold) {
-          let function_output = console.log(`Highlight ${feature} section`);
+          console.log(`Highlight ${feature} section`);
             break;  // Stop searching if a match is found
         }
     }
