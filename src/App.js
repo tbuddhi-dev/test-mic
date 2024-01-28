@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, useEffect } from "react";
+import React, { createContext, useState, useContext } from "react";
 import "popper.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -15,12 +15,15 @@ const GlobalStateContext = createContext();
 
 const App = () => {
   const [basename, setBasename] = useState("default-basename");
+  const [meetingSummaryData, setMeetingSummaryData] = useState();
 
   const globalValues = {
     basename,
     setBasename,
     companyData,
-    companyNewsData
+    companyNewsData,
+    meetingSummaryData,
+    setMeetingSummaryData
   }
 
   console.log("companyNewsData", companyNewsData)
